@@ -2,7 +2,7 @@ package org.gl.ceir.configuration;
 
 import java.util.Locale;
 
-import org.gl.ceir.CeirPannelCode.PropertyReader;
+import org.gl.ceir.CeirPannelCode.config.PropertyReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

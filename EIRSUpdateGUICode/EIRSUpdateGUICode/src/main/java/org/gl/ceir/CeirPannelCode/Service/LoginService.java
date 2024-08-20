@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.gl.ceir.CeirPannelCode.PropertyReader;
+import org.gl.ceir.CeirPannelCode.config.PropertyReader;
 import org.gl.ceir.CeirPannelCode.Feignclient.FeatureFeignImpl;
 import org.gl.ceir.CeirPannelCode.Feignclient.FeignCleintImplementation;
 import org.gl.ceir.CeirPannelCode.Feignclient.UserLoginFeignImpl;

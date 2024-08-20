@@ -1,4 +1,4 @@
-package org.gl.ceir.CeirPannelCode;
+package org.gl.ceir.CeirPannelCode.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

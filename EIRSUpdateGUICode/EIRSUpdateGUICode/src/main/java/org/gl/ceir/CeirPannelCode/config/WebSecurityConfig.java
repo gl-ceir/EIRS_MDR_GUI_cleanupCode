@@ -1,4 +1,4 @@
-package org.gl.ceir.CeirPannelCode;
+package org.gl.ceir.CeirPannelCode.config;
 
 import java.io.IOException;
 

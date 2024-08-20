@@ -1,4 +1,4 @@
-package org.gl.ceir.CeirPannelCode;
+package org.gl.ceir.CeirPannelCode.config;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
