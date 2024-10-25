@@ -141,10 +141,13 @@ function DataTable(Url, dataUrl) {
             //});
           }
         },
-        "columns": result
+        "columns": result,
+        drawCallback: function(settings) {
+                                  $('div#initialloader').delay(300).fadeOut('slow');
+                     }
       });
       
-      $('div#initialloader').delay(500).fadeOut('slow');
+      //$('div#initialloader').delay(500).fadeOut('slow');
       //$('div#initialloader').delay(300).fadeOut('slow');
       
     },

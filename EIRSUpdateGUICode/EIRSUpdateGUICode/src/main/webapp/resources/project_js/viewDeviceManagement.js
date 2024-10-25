@@ -137,10 +137,13 @@ function DataTable(Url, dataUrl) {
             //});
           }
         },
-        "columns": result
+        "columns": result,
+        drawCallback: function(settings) {
+                          $('div#initialloader').delay(300).fadeOut('slow');
+             }
       });
       
-      $('div#initialloader').delay(1000).fadeOut('slow');
+      //$('div#initialloader').delay(1000).fadeOut('slow');
       //$('div#initialloader').delay(300).fadeOut('slow');
       $('#LibraryTable tbody').on('click', 'tr', function() {
         var rawCheckboxId = $(this).closest('tr').find("input[type=checkbox]").attr('id');

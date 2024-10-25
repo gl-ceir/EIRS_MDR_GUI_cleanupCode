@@ -381,6 +381,7 @@ table .dropdown .dropdown-toggle {
 	display:flex;
 	gap:10px;
 	width:100%;
+  flex-wrap: wrap;
 }
 
 .filter-box .filter-row .filter-btn-row{
@@ -673,7 +674,7 @@ table.dataTable thead .sorting_asc{
 }
 
 .GrievanceHistory-modal .modal-dialog{
-	max-width:708px;	
+	max-width:708px;
 }
 
 .GrievanceHistory-modal .modal-dialog .modal-content{
@@ -682,7 +683,7 @@ table.dataTable thead .sorting_asc{
 }
 
 .GrievanceReply-modal .modal-dialog{
-	max-width:708px;	
+	max-width:708px;
 }
 
 .GrievanceReply-modal .modal-dialog .modal-content{
@@ -956,7 +957,8 @@ table .dropdown .dropdown-menu .dropdown-item {
 }
 
 .stats-list .stats-card {
-  width: calc(20% - 20px);
+  /*width: calc(20% - 20px);*/
+  width: calc(24% - 3%);
   border: 2px solid var(--main-color);
   display: flex;
   padding: 10px;
@@ -1065,7 +1067,8 @@ table .dropdown .dropdown-menu .dropdown-item {
 
 .filter-box .filter-row .form-group {
   margin-bottom: 0px;
-  width: 14%;
+  /*width: 14%;*/
+  width: 18%;
 }
 
 .filter-box .filter-row label {
@@ -1600,7 +1603,7 @@ table .checkmark {
 
 .product-image .nav a {
     width: 35px;
-     /* height: 80px; */ 
+     /* height: 80px; */
     display: block;
     text-align: center;
     padding: 10px;
@@ -1742,7 +1745,7 @@ body {
  }
 
 [data-title] {
-  font-size:14px; 
+  font-size:14px;
   position: relative;
 }
 
@@ -1767,7 +1770,7 @@ body {
   left: 8px;
   display: inline-block;
   color: #fff;
-  border: 8px solid transparent;	
+  border: 8px solid transparent;
   border-bottom: 8px solid #8c9fbd;
 }
 
@@ -1801,8 +1804,8 @@ body {
     align-items:center;
     height:100vh;
     background-color:#fff;
-} 
-  
+}
+
 .box{
     position:relative;
     width:200px;
@@ -1841,14 +1844,14 @@ body {
 
 .box span:nth-child(5){
     animation-delay:0.5s;
-    background:#7ab0e3; 
+    background:#7ab0e3;
 }
 
 @keyframes all-effect{
     100%{
         transform:scale(1);
     }
-    
+
 }
 
 .highlight{
@@ -1864,31 +1867,31 @@ body {
 .Popup{
   margin:0 0 0 0px;
 }
- 
+
 .Popup ul {
   list-style: circle inside !important;
 }
- 
+
 .Popup li{
   margin: 0 0 0 0px;
   padding: 0 0 0 10px;
 }
- 
+
 .Popup h4{
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
 }
- 
+
 .Popup p{
   margin-bottom: 10px;
   margin-top: 10px;
 }
- 
+
 .red{
   color: #ed6969;
 }
- 
+
 .scrollY{
   padding: 5px;
   width: 100%;
@@ -1925,4 +1928,10 @@ body {
   height: 32px;
   text-align: center;
   line-height: 11px !important;
+}
+
+@media(max-width: 767px){
+  .stats-list .stats-card {
+  width: calc(50% - 3%);
+  }
 }
