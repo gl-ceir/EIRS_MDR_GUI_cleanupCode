@@ -32,9 +32,11 @@ import org.springframework.context.annotation.PropertySource;
  */
  	
 	
-  @PropertySource({ "file:${GUI_CONFIG_PATH}/application.properties", "file:${GUI_CONFIG_PATH}/messages.properties",
-   "file:${GUI_CONFIG_PATH}/messages_km.properties" })
- 
+ /* @PropertySource({ "file:${GUI_CONFIG_PATH}/3.1.2/application.properties", "file:${GUI_CONFIG_PATH}/3.1.2/messages.properties",
+   "file:${GUI_CONFIG_PATH}/3.1.2/messages_km.properties" })*/
+
+@PropertySource({ "file:${GUI_CONFIG_PATH}/application.properties", "file:${GUI_CONFIG_PATH}/messages.properties",
+		"file:${GUI_CONFIG_PATH}/messages_km.properties" })
 
 public class MainApplication extends SpringBootServletInitializer {
 	

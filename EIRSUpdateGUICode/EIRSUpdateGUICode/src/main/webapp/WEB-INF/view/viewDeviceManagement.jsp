@@ -2015,9 +2015,9 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                                 <div class="pro-detail-card">
                                     <h1 class="Importaint-Fields">
                                         <spring:message code="roletype.Manufacturer" />
-                                    </h1> <input type="text" readonly="readonly" id="editManufacturer" pattern="<spring:eval expression=" @environment.getProperty('pattern.alphanumericSpecialCharactersLength100')" />" oninput="InvalidMsg(this,'input','
+                                    </h1> <input type="text" id="editManufacturer" pattern="<spring:eval expression=" @environment.getProperty('pattern.alphanumericSpecialCharactersLength100')" />" oninput="InvalidMsg(this,'input','
                                     <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" oninvalid="InvalidMsg(this,'input','
-                                    <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" maxlength="100" class="form-control border-0 p-0 h-auto bg-transparent" placeholder=""> <p id="editId" style="display: none"></p>
+                                    <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" maxlength="100" class="form-control border-0 p-0 h-auto bg-transparent" placeholder="<spring:message code="placeholder.enter" />"> <p id="editId" style="display: none"></p>
                                     <p id="editCopiedId" style="display: none"></p>
                                     
                                 </div>
@@ -2053,9 +2053,9 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                                 <div class="pro-detail-card">
                                     <h1 class="Importaint-Fields">
                                         <spring:message code="input.BrandName" />
-                                    </h1> <input type="text" readonly="readonly" id="editBrand" pattern="<spring:eval expression=" @environment.getProperty('pattern.alphanumericSpecialCharactersLength100')" />" oninput="InvalidMsg(this,'input','
+                                    </h1> <input type="text" id="editBrand" pattern="<spring:eval expression=" @environment.getProperty('pattern.alphanumericSpecialCharactersLength100')" />" oninput="InvalidMsg(this,'input','
                                     <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" oninvalid="InvalidMsg(this,'input','
-                                    <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" maxlength="100" class="form-control border-0 p-0 h-auto bg-transparent" placeholder="">
+                                    <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" maxlength="100" class="form-control border-0 p-0 h-auto bg-transparent" placeholder="<spring:message code="placeholder.enter" />">
                                 	
                                 </div>
                             </div>
@@ -2063,9 +2063,9 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                                 <div class="pro-detail-card">
                                     <h1 class="Importaint-Fields">
                                         <spring:message code="input.modelName" />
-                                    </h1> <input type="text" readonly="readonly" id="editModel" pattern="<spring:eval expression=" @environment.getProperty('pattern.alphanumericSpecialCharactersLength100')" />" oninput="InvalidMsg(this,'input','
+                                    </h1> <input type="text" id="editModel" pattern="<spring:eval expression=" @environment.getProperty('pattern.alphanumericSpecialCharactersLength100')" />" oninput="InvalidMsg(this,'input','
                                     <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" oninvalid="InvalidMsg(this,'input','
-                                    <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" maxlength="100" class="form-control border-0 p-0 h-auto bg-transparent" placeholder="">
+                                    <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" maxlength="100" class="form-control border-0 p-0 h-auto bg-transparent" placeholder="<spring:message code="placeholder.enter" />">
                                		
                                	</div>
                             </div>
@@ -2225,7 +2225,7 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                                                         <spring:message code="table.devicetype" />
                                                     </h1>
                                                 </div>
-                                                <div class="col-md-8"> <select id="editDeviceType" class="form-control border-0 p-0 h-auto w-auto bg-transparent" disabled="true"> 
+                                                <div class="col-md-8"> <select id="editDeviceType" class="form-control border-0 p-0 h-auto w-auto bg-transparent">
                                                 <option value="0"><spring:message code="dropdown.select" /></option>
                                                 </select> 
                                                 
@@ -2279,9 +2279,9 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                                                         <spring:message code="input.OEM" />
                                                     </h1>
                                                 </div>
-                                                <div class="col-md-8"> <input readonly="readonly" type="text" id="editOem" pattern="<spring:eval expression=" @environment.getProperty('pattern.alphanumericSpecialCharactersLength100')" />" oninput="InvalidMsg(this,'input','
+                                                <div class="col-md-8"> <input type="text" id="editOem" pattern="<spring:eval expression=" @environment.getProperty('pattern.alphanumericSpecialCharactersLength100')" />" oninput="InvalidMsg(this,'input','
                                                     <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" oninvalid="InvalidMsg(this,'input','
-                                                    <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" maxlength="100" class="form-control border-0 p-0 h-auto bg-transparent" placeholder="" />
+                                                    <spring:message code="validation.alphanumericSpecialCharactersLength100" />');" maxlength="100" class="form-control border-0 p-0 h-auto bg-transparent" placeholder="<spring:message code="placeholder.enter" />"/>
                                                
                                                 </div>
                                             </div>
@@ -2303,7 +2303,7 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                                                         <spring:message code="input.DeviceIDAllocationDate" />
                                                     </h1>
                                                 </div>
-                                                <div class="col-md-8"> <input readonly="readonly" type="date" id="editDeviceIDAllocationDate" class="form-control border-0 p-0 h-auto w-auto text-uppercase bg-transparent" placeholder=""> </div>
+                                                <div class="col-md-8"> <input type="date" id="editDeviceIDAllocationDate" class="form-control border-0 p-0 h-auto w-auto text-uppercase bg-transparent" placeholder=""> </div>
                                             	
                                             </div>
                                             <div class="row product-detail-item">
@@ -3147,7 +3147,7 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                 <form action="#" onsubmit="return addDeviceform()" method="POST" enctype="multipart/form-data" id="addDeviceForm">
                     <div class="content-header d-flex align-items-center justify-content-between">
                         <h1>
-                            <spring:message code="tille.Add" />
+                            <spring:message code="tile.Add" />
                         </h1>
                     </div>
                     <div class="product-box">
@@ -4246,7 +4246,18 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
         <!-- Save Modal close-->
         
             
-        
+     <!-- Save Modal -->
+            <div class="modal fade" id="saveFailedConfirmationMessage" role="dialog">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p> <i class="fa fa-check savedicon" aria-hidden="true"></i> Device already exists</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Save Modal close-->
         <!------------------------------- update Confirmation modal Start --------------------------->
         <div class="modal fade Save-modal" id="updateConfirmationModal">
             <div class="modal-dialog modal-dialog-centered">

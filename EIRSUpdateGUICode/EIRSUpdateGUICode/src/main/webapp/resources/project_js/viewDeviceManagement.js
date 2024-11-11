@@ -2083,6 +2083,9 @@ function addDeviceDetails() {
     async: false,
     success: function(response, textStatus, jqXHR) {
       console.log(JSON.stringify(response));
+      var data = JSON.parse(response);
+      console.log("data - "+ data);
+      console.log("data.errorCode " +data.errorCode);
       $('#AddconfirmationModal').closeModal({
     	dismissible: false
   	});
@@ -2092,14 +2095,28 @@ function addDeviceDetails() {
       $('[id^=mainFrameSave]').attr("src", './resources/assets/images/NoImage.jpg');
       idCount1=0;
   	  DeviceDataTable(lang, null, null, null);
-  	   $('#saveConfirmationMessage').openModal({
-    	dismissible: false
-  	  });
-   setTimeout(function() {
-   $('#saveConfirmationMessage').closeModal({
-    	dismissible: false
-  	  });
-	}, 3000);
+  	  console.log("data.errorCode " +data.errorCode);
+  	  if(data.errorCode === '500'){
+  	    $('#saveFailedConfirmationMessage').openModal({
+                                        	dismissible: false
+                                      	  });
+                                       setTimeout(function() {
+                                       $('#saveFailedConfirmationMessage').closeModal({
+                                        	dismissible: false
+                                      	  });
+                                    	}, 3000);
+
+    }else{
+        $('#saveConfirmationMessage').openModal({
+                           	dismissible: false
+                         	  });
+                          setTimeout(function() {
+                          $('#saveConfirmationMessage').closeModal({
+                           	dismissible: false
+                         	  });
+                       	}, 3000);
+  	  }
+
       //$("#mobileDetailEditDiv").css("display", "block");
       //alert("inside save success function" +JSON.stringify(response));
     },

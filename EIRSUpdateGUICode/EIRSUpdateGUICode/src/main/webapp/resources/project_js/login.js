@@ -30,8 +30,9 @@ $('#langlist').on('change', function() {
 
 		//Login Msg from javascript
 
-		var msg = $("body").attr("data-msg");
-		sessionStorage.getItem("loginMsg") == null ? $('#errorMsg').text(msg) : $('#errorMsg').text(sessionStorage.getItem("loginMsg"));
+		//var msg = $("body").attr("data-msg");
+		//sessionStorage.getItem("loginMsg") == null ? $('#errorMsg').text(msg) : $('#errorMsg').text(sessionStorage.getItem("loginMsg"));
+		sessionStorage.getItem("loginMsg") != null ?  $('#errorMsg').text(sessionStorage.getItem("loginMsg")) : null;
 		sessionStorage.removeItem("loginMsg");
 
 

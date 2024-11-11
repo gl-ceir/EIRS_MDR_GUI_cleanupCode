@@ -125,15 +125,15 @@
 	
 	<%-- <div class="input-field col s12">
 												<input type="text" name="username"
-													id="username" class="form-control" 
+													id="username" class="form-control"
 													oninput="setCustomValidity('')"  oninvalid="this.setCustomValidity('<spring:message code="validation.requiredMsg" />')"
 													title= "<spring:message code="validation.requiredMsg" />" required  maxlength="10" /> <label
 													for="username"><spring:message code="registration.username" /></label>
 											</div>
-	
+
 											<div  class="input-field col s12" id="show_hide_password">
 												<input type="password"   class="form-control password"autocomplete="off"
-													name="password" id="password" 
+													name="password" id="password"
 													oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('<spring:message code="validation.requiredMsg" />')"
 													title= "<spring:message code="validation.requiredMsg" />" required maxlength="10"
 													oncopy="return false" onpaste="return false" /> <label
@@ -141,7 +141,7 @@
 												<div class="input-field-addon">
 													<i   class="fa fa-eye-slash teal-text toggle-password" aria-hidden="true"></i>
 												</div>
-	
+
 											</div>
 	 --%>
 	
@@ -150,11 +150,11 @@
 												<input type="text" name="username" id="username" class="form-control" pattern="<spring:eval expression="@environment.getProperty('pattern.username')" />" min="6" maxlength="15"
 											oninput="InvalidMsg(this,'input','<spring:message code="validation.username" />');"
 											<%-- oninvalid="this.setCustomValidity(this,'input','<spring:message code="validation.username" />');" --%>
-													oninput="setCustomValidity('')"  
+													oninput="setCustomValidity('')"
 													oninvalid="this.setCustomValidity('<spring:message code="validation.requiredMsg" />');"
 													<%-- oninvalid="this.setCustomValidity('<spring:message code="validation.username" />')" --%>
 													title= "<spring:message code="validation.requiredMsg" />"
-													required="required"/> 
+													required="required"/>
 											</div>
 	
 											<div  class="form-group" id="show_hide_password">
@@ -390,7 +390,10 @@
 	
 	<script type="text/javascript"
 		src="${context}/resources/project_js/globalVariables.js?version=<%= (int) (Math.random() * 10) %>"></script>
-	
+
+	<script type="text/javascript"
+        		src="${context}/resources/project_js/dashboard.js?version=<%= (int) (Math.random() * 10) %>"></script>
+
 	<script type="text/javascript" src="${context}/resources/ajax/clearSession.js?version=<%= (int) (Math.random() * 10) %>"></script>
 	<script type="text/javascript" src="${context}/resources/ajax/Login.js?version=<%= (int) (Math.random() * 10) %>"></script>
 	 <script type="text/javascript" src="${context}/resources/ajax/Password.js?version=<%= (int) (Math.random() * 10) %>"></script>
