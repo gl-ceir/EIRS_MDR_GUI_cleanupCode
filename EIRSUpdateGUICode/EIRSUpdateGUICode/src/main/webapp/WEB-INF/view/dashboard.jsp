@@ -143,7 +143,6 @@ if (currentTime < dfd) {
 <body data-lang="${language}" data-usertype="${usertype}" data-roleType="${usertype}" data-userTypeID="${usertypeId}" data-userID="${userid}" data-selected-roleType="${selectedUserTypeId}" data-stolenselected-roleType="${stolenselectedUserTypeId}" data-selected-consignmentTxnId="${consignmentTxnId}" data-operatorTypeId="${operatorTypeId}" data-selected-consignmentStatus="${consignmentStatus}" data-selected-username="${username}" data-defaultLink="${defaultLink}" data-currentTime=" <%=currentTime%>" data-dfd=" <%=dfd%>" data-user-state="${userStatusValue}">
    <!-- Start Page Loading -->
    <!-- <div id="loader-wrapper">
-		<div id="initialloader"></div>
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
 	</div> -->

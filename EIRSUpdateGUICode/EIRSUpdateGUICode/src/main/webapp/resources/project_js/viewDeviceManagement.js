@@ -21,7 +21,7 @@ var documenttype, selectfile, selectDocumentType;
 
 var userId = parseInt($("body").attr("data-userID"));
 $(document).ready(function() {
-  $('div#initialloader').fadeIn('fast');
+
   pageRendering(null, null);
   setAllDropdown();
   DeviceDataTable(lang, null, null, null);

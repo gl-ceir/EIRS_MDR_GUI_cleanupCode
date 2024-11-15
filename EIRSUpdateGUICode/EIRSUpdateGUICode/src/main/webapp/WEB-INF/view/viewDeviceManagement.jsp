@@ -2270,7 +2270,7 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                                                     </h1>
                                                 </div>
                                                 <div class="col-md-8"> <select id="editDeviceStatus" class="form-control border-0 p-0 h-auto w-auto bg-transparent">
-                                                        <option value=""><spring:message code="dropdown.select" /></option>
+                                                        <option value="0"><spring:message code="dropdown.select" /></option>
                                                     </select> </div>
                                             </div>
                                             <div class="row product-detail-item">
@@ -3174,10 +3174,10 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                                 <div class="pro-detail-card">
                                     <h1>
                                         <spring:message code="input.TAC" /><sup class="text-danger">*</sup>
-                                    </h1> <!-- <p id="addTac"></p> --> <input type="text" id="addTac" pattern="<spring:eval expression=" @environment.getProperty('pattern.tac')" />" 
+                                    </h1><input type="text" id="addTac" pattern="<spring:eval expression=" @environment.getProperty('pattern.tac')" />"
                                     oninput="InvalidMsg(this,'input','<spring:message code="validation.tac8" />');" 
-                                    <%-- oninvalid="InvalidMsg(this,'input','<spring:message code="validation.tac" />');" --%>
-                                    oninvalid="this.setCustomValidity('<spring:message code="validation.requiredMsg" />');" 
+                                   oninvalid="InvalidMsg(this,'input','<spring:message code="validation.tac8" />');"
+
                                     maxlength="8" class="form-control border-0 p-0 h-auto bg-transparent" placeholder="<spring:message code="placeholder.enter" />" required="required">
                                 </div>
                             </div>
@@ -4661,6 +4661,8 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
         var ctx = "${pageContext.request.contextPath}"
     </script>
     <script type="text/javascript" src="${context}/resources/project_js/globalVariables.js?version=<%= (int) (Math.random() * 10) %>"></script>
+    <script type="text/javascript"
+            		src="${context}/resources/project_js/dashboard.js?version=<%= (int) (Math.random() * 10) %>"></script>
     <script type="text/javascript" src="${context}/resources/project_js/viewDeviceManagement.js?version=<%= (int) (Math.random() * 10) %>"></script>
    <%--  <script type="text/javascript" src="${context}/resources/project_js/enterKey.js?version=<%= (int) (Math.random() * 10) %>"></script> --%>
     <script type="text/javascript"

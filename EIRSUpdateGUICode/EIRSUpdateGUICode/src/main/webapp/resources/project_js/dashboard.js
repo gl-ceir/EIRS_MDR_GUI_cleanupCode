@@ -57,7 +57,7 @@ $(document)
 					saveIPLog();
 					window.parent.$('#langlist').val(langParameter);
 					sessionStorage.removeItem("currentPageLocation");
-					$('div#initialloader').delay(300).fadeOut('slow');
+					//$('div#initialloader').delay(300).fadeOut('slow');
 					isActive(featurID);
 					sessionStorage.removeItem("data-feature");
 
