@@ -2947,13 +2947,13 @@ data-stolenselected-roleType="${stolenselectedUserTypeId}" data-userName="${user
                                             </div>
                                             
                                             <div class="row product-detail-item">
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 Importaint-Fields">
                                                     <h1>
                                                         <spring:message code="input.manufacturerCountry" />
                                                     </h1>
                                                 </div>
                                                  <div class="col-md-8"> 
-                                                 	<select id="editManufacturerCountry" class="form-control border-0 p-0 h-auto w-auto bg-transparent"> 
+                                                 	<select id="editManufacturerCountry" class="form-control border-0 p-0 h-auto w-auto bg-transparent"
                                                 		<option value="" selected="selected"><spring:message code="dropdown.trc.select" /></option>
                                                 	</select> 
                                                 </div>
